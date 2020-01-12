@@ -24,7 +24,7 @@ export default function CharacterList() {
                     <CharacterCard 
                         key={character.id}
                         name={character.name}
-                        species={character.species}
+                        gender={character.gender}
                     />
                 )
             })}

@@ -1,11 +1,15 @@
 import React from "react";
+import { Card, CardText, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+
 
 const CharacterCard = props => {
     return(
-        <div>
-            <h2>{props.name}</h2>
-            <p>{props.species}</p>
-        </div>
+        <Card>
+            <CardBody>
+                <CardTitle>{props.name}</CardTitle>
+                <p>{props.gender}</p>
+            </CardBody>
+        </Card>
     )
 }
 export default CharacterCard;
