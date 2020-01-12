@@ -9,7 +9,7 @@ export default function CharacterList() {
         axios
             .get(`https://swapi.co/api/people/`)
             .then(response => {
-                setCharacters(response.results);
+                setCharacters(response.data.results);
             })
             .catch(error => {
                 console.log("sucks to suck", error);
